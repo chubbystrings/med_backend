@@ -1,6 +1,6 @@
 {
   "version": 2,
   "name": "med_backend",
-  "builds": [{ "src": "/dist/app.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/dist/(.*)", "dest": "/app.js" }]
+  "builds": [{ "src": "/bin/www", "use": "@vercel/node" }],
+  "routes": [{ "src": "/dist/(.*)", "dest": "/bin/www" }]
 }
