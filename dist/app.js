@@ -19,8 +19,11 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
 app.use((0, cookie_parser_1.default)());
 app.use(express_1.default.static(path_1.default.join(__dirname, 'public')));
-app.use('/', index_1.default);
-app.use('/roles', roles_1.default);
+app.get("/", (req, res) => {
+    res.redirect("/api/v1");
+});
+app.use("/api/v1/med_backend", index_1.default);
+app.use("/api/v1/med_backend/roles", roles_1.default);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     next((0, http_errors_1.default)(404));

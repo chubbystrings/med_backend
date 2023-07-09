@@ -19,8 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/roles', rolesRouter);
+app.get("/", (req, res) => {
+  res.redirect("/api/v1");
+});
+
+app.use("/api/v1/med_backend", indexRouter);
+app.use("/api/v1/med_backend/roles", rolesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
