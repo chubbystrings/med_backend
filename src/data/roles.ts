@@ -34,7 +34,7 @@ export const roles = [
     name: "Deputy sales personnel",
     type: "custom",
     created_at: "Jan 1 2023",
-    status: "active",
+    status: "inactive",
     role_users: 7,
   },
   {
@@ -48,7 +48,7 @@ export const roles = [
     name: "Developer-basic",
     type: "system custom",
     created_at: "Jan 1 2023",
-    status: "active",
+    status: "inactive",
     role_users: 5,
   },
 ];
