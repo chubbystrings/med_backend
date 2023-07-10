@@ -11,8 +11,8 @@ import rolesRouter from './routes/roles';
 const app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, "../", 'views'));
-app.set('view engine', 'jade');
+// app.set('views', path.join(__dirname, "../", 'views'));
+// app.set('view engine', 'jade');
 
 app.use(cors());
 app.use(logger('dev'));
@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
-  res.redirect("/api/v1");
+  res.redirect("/api/v1/med_backend");
 });
 
 app.use("/api/v1/med_backend", indexRouter);
