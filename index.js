@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require("../dist/app").default;
+var app = require("./dist/app").default;
 var debug = require("debug")("med-backend:server");
 var http = require("http");
 
