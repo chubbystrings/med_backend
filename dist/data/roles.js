@@ -41,7 +41,7 @@ exports.roles = [
         name: "Developeradmin",
         type: "system custom",
         created_at: "Jan 1 2023",
-        status: "inactive",
+        status: "active",
         role_users: 10,
     },
     {
