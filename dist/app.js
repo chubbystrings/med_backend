@@ -22,7 +22,7 @@ app.use(express_1.default.urlencoded({ extended: false }));
 app.use((0, cookie_parser_1.default)());
 app.use(express_1.default.static(path_1.default.join(__dirname, 'public')));
 app.get("/", (req, res) => {
-    res.redirect("/api/v1");
+    res.redirect("/api/v1/med_backend");
 });
 app.use("/api/v1/med_backend", index_1.default);
 app.use("/api/v1/med_backend/roles", roles_1.default);
