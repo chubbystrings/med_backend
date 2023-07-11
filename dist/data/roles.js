@@ -15,7 +15,7 @@ exports.roles = [
         name: "Merchantadmin",
         type: "default",
         created_at: "Jan 1 2023",
-        status: "active",
+        status: "inactive",
         role_users: 10,
     },
     {
@@ -39,7 +39,7 @@ exports.roles = [
         name: "Deputy sales personnel",
         type: "custom",
         created_at: "Jan 1 2023",
-        status: "inactive",
+        status: "active",
         role_users: 7,
     },
     {
@@ -55,7 +55,7 @@ exports.roles = [
         name: "Developer-basic",
         type: "system custom",
         created_at: "Jan 1 2023",
-        status: "inactive",
+        status: "active",
         role_users: 5,
     },
 ];
